@@ -1,11 +1,14 @@
 /*
 Colors used
 
-background: #EBECE7
+background: #F8F5F1
 headings #5a5593
 text 1 #6E68B1
 active #5AED80
-contrast with active #47446e
+contrast #47446e
+lightgrey: #d3d3d3;
+lightyellow: #fcffad;
+lightgreen: #d9ffe0;
 
  */
 
@@ -15,14 +18,15 @@ contrast with active #47446e
 
 :root {
 
-    --background: #EBECE7;
+    --background: #F8F5F1;
     --headings: #5a5593;
     --primary-color: #6E68B1;
     --secondary-color: #5AED80;
     --contrast-color: #47446e;
     --lightgrey: #d3d3d3;
     --lightyellow: #fcffad;
-    --white: #ffffff;
+    --lightgreen: #d9ffe0;
+    --white: #fff
 }
 
 /* HEADER, links and Buttons */
@@ -47,7 +51,7 @@ a:hover, a:focus {
 }
 
 
-.button, button, a.navigation-list__item {
+.button, button, a.navigation-list__item, .secondary__button {
     /* overwrites browser defaults */
     /* resets the border */
     border: none;
@@ -55,21 +59,21 @@ a:hover, a:focus {
     /* takes the font from the outer container */
     font-family: inherit;
     /* style button */
-    background-color: var(--secondary-color);
-    color: var(--contrast-color);
+    background-color: var(--primary-color);
+    color: var(--lightgreen);
     text-decoration: none;
     padding: 10px;
     border-radius: 0 10px;
     /* width of the border, type, color */
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
     transition: 0.2s opacity;
 }
 
-a.navigation-list__item--active {
+a.navigation-list__item--active, .secondary__button {
 
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--contrast-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 
