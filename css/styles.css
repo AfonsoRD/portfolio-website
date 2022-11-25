@@ -26,6 +26,7 @@ lightgreen: #d9ffe0;
     --lightgrey: #d3d3d3;
     --lightyellow: #fcffad;
     --lightgreen: #d9ffe0;
+    --errormsg: #ff0000;
     --white: #fff
 }
 
@@ -345,6 +346,11 @@ h3 {
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 0.5em;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 0.8em;
 }
 
 .robot-contact {
