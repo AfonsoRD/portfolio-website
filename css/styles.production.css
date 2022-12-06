@@ -19,10 +19,6 @@ lightgreen: #d9ffe0;
 
  */
 
-* {
-    box-sizing: border-box;
-}
-
 /* HEADER, links and Buttons */
 
 a {
@@ -253,6 +249,7 @@ h3 {
     clear: both;
     display: flex;
     text-align: center;
+    margin-bottom: 3%;
 }
 
 .social-media__item:hover,
@@ -389,6 +386,11 @@ h3 {
 .project__item {
     display: inline-block;
     width: 33%;
+    text-align: center;
+}
+
+.project__img {
+    width: 100%;
 }
 
 /* end grid fallback */

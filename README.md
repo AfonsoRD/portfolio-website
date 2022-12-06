@@ -11,6 +11,6 @@ This project is a responsive portfolio website built in HTML and CSS to show the
 
 ###### Technical Dependencies
 
-HTML5, CSS3, ES6
+HTML, CSS
 
 ###### [Portfolio Website](https://afonsord.github.io/portfolio-website/)
