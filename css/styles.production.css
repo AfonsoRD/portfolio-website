@@ -1,11 +1,4 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: >0.3%,last 2 versions,not dead
-*/
-
-/*
 Colors used
 
 background: #F8F5F1
@@ -24,18 +17,21 @@ lightgreen: #d9ffe0;
 a {
     color: #6E68B1;
     transition: 0.6s opacity;
+    font-weight: bold;
 }
+
 
 
 a:visited {
     /* visited link */
-    color: #5AED80;
+    color: #008400;
 }
+
 
 
 a:active {
     /* visited link */
-    color: #5AED80;
+    color: #008400;
 }
 
 
@@ -63,6 +59,7 @@ a:hover, a:focus {
     /* width of the border, type, color */
     border-bottom: 2px solid #5AED80;
     transition: 0.2s opacity;
+    font-weight: normal;
 }
 
 
@@ -82,6 +79,7 @@ button {
     /* width of the border, type, color */
     border-bottom: 2px solid #5AED80;
     transition: 0.2s opacity;
+    font-weight: normal;
 }
 
 
@@ -101,6 +99,7 @@ a.navigation-list__item {
     /* width of the border, type, color */
     border-bottom: 2px solid #5AED80;
     transition: 0.2s opacity;
+    font-weight: normal;
 }
 
 
@@ -120,6 +119,7 @@ a.navigation-list__item {
     /* width of the border, type, color */
     border-bottom: 2px solid #5AED80;
     transition: 0.2s opacity;
+    font-weight: normal;
 }
 
 a.navigation-list__item--active {
@@ -127,6 +127,7 @@ a.navigation-list__item--active {
     background-color: #5AED80;
     color: #47446e;
     border-bottom: 2px solid #6E68B1;
+    font-weight: normal;
 }
 
 .secondary__button {
@@ -134,6 +135,7 @@ a.navigation-list__item--active {
     background-color: #5AED80;
     color: #47446e;
     border-bottom: 2px solid #6E68B1;
+    font-weight: normal;
 }
 
 
@@ -279,24 +281,9 @@ h3 {
 /* About ME*/
 
 
-@-webkit-keyframes color-change {
-    0% {
-        fill: #5AED80;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: #6E68B1;
-    }
-}
-
-
 @keyframes color-change {
     0% {
-        fill: #5AED80;
+        fill: #008400;
     }
 
     50% {
@@ -306,56 +293,26 @@ h3 {
     100% {
         fill: #6E68B1;
     }
-}
-
-@-webkit-keyframes cloud-move {
-    from {
-        -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px);
-    }
-
-    to {
-        -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px);
-    }
-
 }
 
 @keyframes cloud-move {
     from {
-        -webkit-transform: translate(0, 50px);
         transform: translate(0, 50px);
     }
 
     to {
-        -webkit-transform: translate(200px, 50px);
         transform: translate(200px, 50px);
     }
 
-}
-
-
-@-webkit-keyframes cloud-move-reverse {
-    from {
-        -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px);
-    }
 }
 
 
 @keyframes cloud-move-reverse {
     from {
-        -webkit-transform: translate(446px, 48px);
         transform: translate(446px, 48px);
     }
 
     to {
-        -webkit-transform: translate(100px, 48px);
         transform: translate(100px, 48px);
     }
 }
@@ -363,19 +320,16 @@ h3 {
 
 
 .sun {
-    -webkit-animation: color-change 4s infinite alternate linear;
     animation: color-change 4s infinite alternate linear;
 }
 
 
 
 .cloud-front {
-    -webkit-animation: 30s cloud-move infinite alternate linear;
     animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
-    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
@@ -486,20 +440,6 @@ h3 {
     float: right;
 }
 
-@-webkit-keyframes color-robot {
-    0% {
-        fill: #F8F5F1;
-    }
-
-    50% {
-        fill: #fcffad;
-    }
-
-    100% {
-        fill: #5AED80;
-    }
-}
-
 @keyframes color-robot {
     0% {
         fill: #F8F5F1;
@@ -510,12 +450,11 @@ h3 {
     }
 
     100% {
-        fill: #5AED80;
+        fill: #008400;
     }
 }
 
 
 .robot-glow {
-    -webkit-animation: color-robot 2s infinite alternate linear;
     animation: color-robot 2s infinite alternate linear;
 }
