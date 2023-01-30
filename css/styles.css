@@ -270,6 +270,11 @@ h3 {
 
 .project__img {
     width: 100%;
+    padding: 2%;
+}
+
+.project__img:hover {
+    transform: scale(1.5);
 }
 
 /* end grid fallback */
