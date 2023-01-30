@@ -40,7 +40,7 @@ a {
 
 a:visited, a:active {
     /* visited link */
-    color: var(--secondary-color);
+    color: var(--headings);
 }
 
 
