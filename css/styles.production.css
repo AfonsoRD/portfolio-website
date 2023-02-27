@@ -1,4 +1,11 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: >0.3%,last 2 versions,not dead
+*/
+
+/*
 Colors used
 
 background: #F8F5F1
@@ -281,6 +288,21 @@ h3 {
 /* About ME*/
 
 
+@-webkit-keyframes color-change {
+    0% {
+        fill: #008400;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #6E68B1;
+    }
+}
+
+
 @keyframes color-change {
     0% {
         fill: #008400;
@@ -295,24 +317,54 @@ h3 {
     }
 }
 
-@keyframes cloud-move {
+@-webkit-keyframes cloud-move {
     from {
+        -webkit-transform: translate(0, 50px);
         transform: translate(0, 50px);
     }
 
     to {
+        -webkit-transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
+    }
+
+}
+
+@keyframes cloud-move {
+    from {
+        -webkit-transform: translate(0, 50px);
+        transform: translate(0, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(200px, 50px);
         transform: translate(200px, 50px);
     }
 
 }
 
 
-@keyframes cloud-move-reverse {
+@-webkit-keyframes cloud-move-reverse {
     from {
+        -webkit-transform: translate(446px, 48px);
         transform: translate(446px, 48px);
     }
 
     to {
+        -webkit-transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
+    }
+}
+
+
+@keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        -webkit-transform: translate(100px, 48px);
         transform: translate(100px, 48px);
     }
 }
@@ -320,23 +372,25 @@ h3 {
 
 
 .sun {
+    -webkit-animation: color-change 4s infinite alternate linear;
     animation: color-change 4s infinite alternate linear;
 }
 
 
 
 .cloud-front {
+    -webkit-animation: 30s cloud-move infinite alternate linear;
     animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
+    -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* Projects */
 
 /* start grid fallback */
-
 
 .project__item {
     display: inline-block;
@@ -347,10 +401,6 @@ h3 {
 .project__img {
     width: 100%;
     padding: 2%;
-}
-
-.project__img:hover {
-    transform: scale(1.5);
 }
 
 /* end grid fallback */
@@ -446,6 +496,20 @@ h3 {
     float: right;
 }
 
+@-webkit-keyframes color-robot {
+    0% {
+        fill: #F8F5F1;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #008400;
+    }
+}
+
 @keyframes color-robot {
     0% {
         fill: #F8F5F1;
@@ -462,5 +526,6 @@ h3 {
 
 
 .robot-glow {
+    -webkit-animation: color-robot 2s infinite alternate linear;
     animation: color-robot 2s infinite alternate linear;
 }
