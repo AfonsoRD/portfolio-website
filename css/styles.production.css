@@ -422,10 +422,6 @@ h3 {
         padding: 20px;
     }
 
-    .project__item:last-child {
-        grid-column: 3 / 3;
-        grid-row: 1 / 3;
-    }
 
 
 }
