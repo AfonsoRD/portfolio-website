@@ -390,6 +390,12 @@ h3 {
 
 /* Projects */
 
+#chat_img {
+
+    width: 300px;
+    height: 600px;
+}
+
 /* start grid fallback */
 
 .project__item {
