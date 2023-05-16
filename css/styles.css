@@ -205,6 +205,15 @@ h3 {
 
 /* About ME*/
 
+.about-table {
+    border: 2px solid var(--lightgreen);
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+
+}
+
 
 @keyframes color-change {
     0% {

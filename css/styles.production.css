@@ -287,6 +287,17 @@ h3 {
 
 /* About ME*/
 
+/* ABOUT */
+
+.about-table {
+    border: 2px solid #d9ffe0;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+
+}
+
 
 @-webkit-keyframes color-change {
     0% {
