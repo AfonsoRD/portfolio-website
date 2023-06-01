@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Case - Rui Afonso</title>
+    <link rel="shortcut icon" href="images/ruifavicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.production.css">
+</head>
+
+<body>
+    <header class="case-header">
+        <a href="projects.html" role="menuitem" class="navigation-list__item btn-lg"> <span
+                class="glyphicon glyphicon-arrow-left"></span> Return to the project</a>
+    </header>
+    <div class="case-study">
+        <h1>Full-Stack project study case - myFlix</h1>
+        <div class="intro">
+            <div class="intro-content">
+                <h2>Overview</h2>
+                <p>myFlix is a single page application (SPA), built using React as a framework, that provides users with
+                    tons of fun information about movies, genres and directors using a REST API and a database called
+                    "movies-api". In this APP, users can create their own profile, save their favorite movies and delete
+                    their account.</p>
+                <br />
+                <p>Tech-stack: <span>MERN</span></p>
+                <br>
+                <h2>Purpose & Context</h2>
+                <p>I have built myFlix during my CareerFoundry’s Full-Stack Web Development course to master my skills
+                    in JavaScript. The project was divided in 2 parts: Server-side and Client-side.</p>
+                <br />
+                <h2>Objective</h2>
+                <p>The objective was to learn and master the MERN tech stack and create a flawless bug-free and
+                    responsive APP to include in my portfolio.</p>
+
+            </div>
+            <div class="intro-img ">
+                <img src="images/myFlix-app.png" alt="screenshot of movie list" />
+            </div>
+        </div>
+        <br>
+        <h2 class="approach-title">Approach</h2>
+        <div class="server-side">
+            <div class="server-content">
+                <h3>Server-Side</h3>
+                <p>I created a RESTful API using Node.js and Express, that interacts with a non-relational database
+                    (MongoDB). The API can be accessed via commonly used HTTP methods like GET or POST. To retrieve data
+                    from and store data in the database, CRUD methods are used. The API provides movie information in
+                    JSON format.</p>
+                <p>This project is the REST API built using Node.js for the server-side of the application that
+                    interacts with a non-relational database that in this case was MongoDP. The database can store
+                    movies and users using CRUD methods in JSON format.
+                    To access the data base, can be done using the HTTP methods (GET, POST, PUT and DELETE).</p>
+                <br />
+                <p>
+                    <a href="https://github.com/AfonsoRD/movie_api#endpoints" class="endpoint-link" target="_blank">
+                        <span>View endpoints</span></a>
+                </p>
+
+                <br />
+                <p>To secure the application, I used user authentication and encryption of user data, using JWT
+                    authentication.
+                </p>
+                <p>The database was tested using Postman.</p>
+            </div>
+            <div class="server-img">
+                <img src="images/postman-unauthorized.png" alt="screenshot of unautohrized postman test" />
+                <img src="images/postman-authorized.png" alt="screenshot of authorized postman test" />
+            </div>
+        </div>
+        <br>
+        <div class="client-side">
+            <div class="client-content">
+                <h3>Client-Side</h3>
+                <p>The next step was creating a beautiful responsive UI to connect my database with the client-side, and
+                    I have use React, React-Redux and Bootstrap. The APP it’s a SPA (single page application) that
+                    contain 5 different views for the user.
+                </p>
+                <br>
+                <table class="case-table">
+                    <thead>
+                        <tr>
+                            <th>Main view</th>
+                            <th>Single Movie View</th>
+                            <th>Login View</th>
+                            <th>Signup View</th>
+                            <th>Profile view</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Returns a list of ALL movies to the user</td>
+                            <td>Returns data (description, genre, director, image) about a single movie to the user</td>
+                            <td>Allows users to log in with a username and password</td>
+                            <td>Allows new users to register (username, password, email, date of birth)</td>
+                            <td>Displays user registration details</td>
+                        </tr>
+                        <tr>
+                            <td>Filtering the list of movies with a “search” feature</td>
+                            <td>Allows users to add a movie to their list of favorites</td>
+                            <td></td>
+                            <td></td>
+                            <td>Allows users to update their info (username, password, email, date of birth)</td>
+
+
+                        </tr>
+                        <tr>
+                            <td>Ability to select a movie for more details</td>
+                            <td>Display "Similar movies" list</td>
+                            <td></td>
+                            <td></td>
+                            <td>Displays favorite movies</td>
+                        </tr>
+                        <tr>
+                            <td>Ability to log out</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Allows users to remove a movie from their list of favorites</td>
+                        </tr>
+                        <tr>
+                            <td>Ability to navigate to Profile view</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Allows existing users to deregister</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="intro
+            ">
+                <div class="project__img"><img src="images/myFlix-login.png" alt="screenshot of login view" /></div>
+                <div class="project__img"><img src="images/myFlix-favorite.png" alt="screenshot of movie view" /></div>
+                <div class="project__img"><img src="images/myFlix-mobile.png" alt="screenshot of profile view" /></div>
+            </div>
+        </div>
+        <div class="challenges">
+            <h2>Challenges</h2>
+            <p>This was both my favorite and most challenging project. I have enjoyed building the API and working with
+                database structures. I also quickly became familiar with using the terminal. Developing the client-side,
+                it took me a while to understand how React and Redux work and how to achieve the desired results. But
+                with the help of my great tutor and after a pair-programming session with an experienced developer, I
+                could conquer that mountain.</p>
+        </div>
+        <div class="duration">
+            <h2>Duration</h2>
+            <p>The development of the client-side took me twice as long as it normally took to complete a CareerFoundry
+                achievement. It was because I needed time to wrap my head around how React (and React Redux) work.</p>
+        </div>
+
+    </div>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/ruiafonso.dbass" class="social-media__item"><img src="images/facebook.svg"
+                    alt="Facebook"></a>
+            <a href="https://github.com/AfonsoRD" class="social-media__item"><img src="images/github.svg"
+                    alt="Github"></a>
+            <a href="https://www.linkedin.com/in/rui-c-afonso/" class="social-media__item"><img
+                    src="images/linkedin.svg" alt="Linkedin"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
